@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
     res.send("Hello Viktor at Recart");
 });
 
-app.listen(3000, () => {
-    console.log("Mini Recart Backend is running on port 3000");
+app.get("/api/subscribe", (req, res) => {
+    res.send("Subscribed");
+});
+
+app.listen(3001, () => {
+    console.log("Mini Recart Backend is running on port 3001");
 });
